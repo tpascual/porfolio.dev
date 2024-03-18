@@ -1,12 +1,14 @@
 ---
+import LinkButton from "./LinkButton.astro"
+import Link from "./icons/Link.astro"
 import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCIE = [
   {
     date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
+    title: "chief technology officer",
+    company: "Julius Commerce Iberica",
     description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
+      "supervisión de ",
     link: "https://twitch.tv/midudev",
   },
   {
@@ -28,3 +30,7 @@ const EXPERIENCIE = [
     ))
   }
 </ol>
+<LinkButton href="Ver toda la experiencia">
+  <Link class="size-4" />
+  Ver toda la experiencia
+</LinkButton>
